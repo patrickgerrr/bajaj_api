@@ -11,11 +11,11 @@ app.post('/bfhl', (req, res) => {
       return res.status(400).json({ is_success: false });
     }
 
-    const fullName = 'john_doe'; 
-    const dob = '17091999'; 
+    const fullName = 'RS Pratheek'; 
+    const dob = '03052004';
     const user_id = `${fullName}_${dob}`;
-    const email = 'john@xyz.com';
-    const roll_number = 'ABCD123';
+    const email = 'rs.pratheek2022@vitstudent.ac.in';
+    const roll_number = '22BCE1494';
 
     const even_numbers = [];
     const odd_numbers = [];
