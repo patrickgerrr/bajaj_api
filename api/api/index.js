@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -12,7 +11,7 @@ app.post('/bfhl', (req, res) => {
     }
 
     const fullName = 'john_doe'; 
-    const dob = '17091999'; 
+    const dob = '17091999';
     const user_id = `${fullName}_${dob}`;
     const email = 'john@xyz.com';
     const roll_number = 'ABCD123';
@@ -25,7 +24,7 @@ app.post('/bfhl', (req, res) => {
     let all_alpha_chars = '';
 
     data.forEach(item => {
-      if (typeof item !== 'string') return;
+      if (typeof item !== 'string') return; 
 
       if (!isNaN(item) && item.trim() !== '') {
         const num = parseInt(item, 10);
@@ -68,8 +67,4 @@ app.post('/bfhl', (req, res) => {
   }
 });
 
-// app.listen(port, () => {
-//   console.log(`Server running on port ${port}`);
-// });
-
-module.exports=app
+module.exports = app;
